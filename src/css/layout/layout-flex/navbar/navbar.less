@@ -1,0 +1,59 @@
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 底部导航栏样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+
+
+/* 引用变量 */
+
+@import "../../../theme/theme.less";
+
+/* 底部导航栏样式 */
+
+.g-navbar-height-large {
+    height: @header-height-large;
+}
+
+.g-navbar-height-middle {
+    height: @header-height-middle;
+}
+
+.g-navbar-height-small {
+    height: @header-height-small;
+}
+
+.g-flex-navbar {
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    background-color: @dark-bg;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    .g-navbar-height-large;
+    /* 导航项目 */
+    >.navbar-item {
+        color: #808080;
+        flex: 1;
+    }
+    /* 被选中的样式 */
+    >.navbar-item.active {
+        color: #09BB07;
+    }
+    /* 导航图标 */
+    >.navbar-item>.icon {
+
+
+    }
+    /* 导航名称 */
+    >.navbar-item>.name {
+        display: block;
+
+    }
+}

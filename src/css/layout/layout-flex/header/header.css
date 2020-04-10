@@ -1,0 +1,197 @@
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 头部样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 主题定义
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* header 高度定义 */
+/* 主题色彩定义 */
+/* 背景色定义 */
+/* 透明色彩定义 */
+/* 统一字体 */
+/* 内边距统一设定 */
+/* 外边距统一设定 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 公共样式配置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 媒体查询 --- 暂不使用 */
+/* 蒙版样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 遮罩层样式, 在多个地方都会用的, 放到公共样式中
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+.g-mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 300;
+}
+/* 内边距 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 内边距设置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+.g-padding-large1 {
+  padding: 0 1rem;
+}
+.g-padding-large1-all {
+  padding: 1rem;
+}
+.g-padding-large2 {
+  padding: 0 2rem;
+}
+.g-padding-large2-all {
+  padding: 2rem;
+}
+.g-padding-large3 {
+  padding: 0 3rem;
+}
+.g-padding-large3-all {
+  padding: 3rem;
+}
+.g-padding-large {
+  padding: 0 0.5rem;
+}
+.g-padding-large-all {
+  padding: 0.5rem;
+}
+.g-padding-middle {
+  padding: 0 0.3rem;
+}
+.g-padding-middle-all {
+  padding: 0.3rem;
+}
+.g-padding-small {
+  padding: 0 0.2rem;
+}
+.g-padding-small-all {
+  padding: 0.2rem;
+}
+.g-padding-no {
+  padding: 0rem;
+}
+/* 外边距 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 内边距设置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+.g-margin-large1 {
+  margin: 0 1rem;
+}
+.g-margin-large1-all {
+  margin: 1rem;
+}
+.g-margin-large2 {
+  margin: 0 2rem;
+}
+.g-margin-large2-all {
+  margin: 2rem;
+}
+.g-margin-large3 {
+  margin: 0 3rem;
+}
+.g-margin-large3-all {
+  margin: 3rem;
+}
+.g-margin-large {
+  margin: 0 0.5rem;
+}
+.g-margin-large-all {
+  margin: 0.5rem;
+}
+.g-margin-middle {
+  margin: 0 0.3rem;
+}
+.g-margin-middle-all {
+  margin: 0.3rem;
+}
+.g-margin-small {
+  margin: 0 0.2rem;
+}
+.g-margin-small-all {
+  margin: 0.2rem;
+}
+.g-margin-no {
+  margin: 0rem;
+}
+.g-header-large {
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+.g-header-middle {
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+.g-header-small {
+  height: 1rem;
+  line-height: 1rem;
+}
+/* 页面头部固定 */
+.g-flex-header {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+  background-color: #4a90e2;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  /* 左侧功能区 */
+  /* 中间标题部分 */
+  /* 右侧功能区 */
+}
+.g-flex-header > .left {
+  text-align: center;
+  width: 2rem;
+  float: left;
+}
+.g-flex-header > .title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 2rem;
+  width: 6rem;
+  position: absolute;
+}
+.g-flex-header > .right {
+  text-align: center;
+  width: 2rem;
+  float: right;
+}

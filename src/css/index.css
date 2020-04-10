@@ -1,0 +1,631 @@
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 自定义UI组件库/框架
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 字体图标 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 字体图标样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 字体图标，依赖font-awesome */
+@import 'font-awesome/css/font-awesome.min.css';
+/* 字体图标，依赖iconfont */
+@import 'iconfont/iconfont.css';
+/* 可以在这里进行字体样式的重置 */
+/* css reset */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 覆盖浏览器的默认样式，从而排除浏览器默认样式的影响
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 去掉所有元素的内外边距 */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+img,
+ul,
+li,
+form,
+label,
+input,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+}
+/* 统一全局字体 */
+body {
+  font-family: -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", Arial, sans-serif;
+}
+/* 列表元素去掉默认的列表样式 */
+ol,
+ul {
+  list-style: none;
+}
+/* Table元素的边框折叠 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* 去掉默认的下划线 */
+a {
+  text-decoration: none;
+}
+/* 去掉input,select,textarea自带的边缘效果和背景颜色 */
+input,
+select,
+textarea {
+  outline: none;
+  background: none;
+}
+/* 其他 */
+fieldset,
+img {
+  border: 0;
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+del {
+  text-decoration: line-through;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+  font-style: normal;
+  font-weight: 500;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 500;
+}
+q:before,
+q:after {
+  content: '';
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+ins,
+a {
+  text-decoration: none;
+}
+/* 变量-主题 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 主题定义
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* header 高度定义 */
+/* 主题色彩定义 */
+/* 背景色定义 */
+/* 透明色彩定义 */
+/* 统一字体 */
+body {
+  font-size: 0.5rem !important;
+}
+/* 公共样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 公共样式配置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 媒体查询 --- 暂不使用 */
+/* 蒙版样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 遮罩层样式, 在多个地方都会用的, 放到公共样式中
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+.g-mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 300;
+}
+/* 内边距 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 内边距设置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+.g-padding-max {
+  padding: 1rem;
+}
+.g-padding-middle {
+  padding: 0.8rem;
+}
+.g-padding-min {
+  padding: 0.5rem;
+}
+/* 布局样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 整体布局样式合并
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 头部样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 头部样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+.g-header-max {
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+.g-header-middle {
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+.g-header-min {
+  height: 1rem;
+  line-height: 1rem;
+}
+/* 页面头部固定 */
+.g-header {
+  overflow: hidden;
+  text-align: center;
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  top: 0;
+  z-index: 200;
+  border-bottom: 1px solid #ddd;
+  background-color: #4a90e2;
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+/* 左侧功能区 */
+.g-header > .left {
+  text-align: center;
+  width: 2rem;
+  float: left;
+}
+/* 中间标题部分 */
+.g-header > .title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 2rem;
+  width: 6rem;
+  position: absolute;
+}
+/* 右侧功能区 */
+.g-header > .right {
+  text-align: center;
+  width: 2rem;
+  float: right;
+}
+/* 内容样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 布局内容样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+/* 内容区域 */
+.g-content {
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+}
+.g-header ~ .g-content {
+  padding-top: 1.2rem;
+}
+.g-navbar ~ .g-content {
+  padding-bottom: 1.2rem;
+}
+.g-header-max ~ .g-content {
+  padding-top: 1.5rem;
+}
+.g-navbar-max ~ .g-content {
+  padding-bottom: 1.5rem;
+}
+.g-header-middle ~ .g-content {
+  padding-top: 1.2rem;
+}
+.g-navbar-middle ~ .g-content {
+  padding-bottom: 1.2rem;
+}
+.g-header-min ~ .g-content {
+  padding-top: 1rem;
+}
+.g-navbar-min ~ .g-content {
+  padding-bottom: 1rem;
+}
+/* 底部导航样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 底部导航栏样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+/* 底部导航栏样式 */
+.g-navbar-height-max {
+  height: 1.5rem;
+}
+.g-navbar-height-middle {
+  height: 1.2rem;
+}
+.g-navbar-height-min {
+  height: 1rem;
+}
+.g-navbar {
+  text-align: center;
+  position: fixed;
+  box-sizing: border-box;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  z-index: 200;
+  background-color: #aaaaaa;
+  overflow: hidden;
+  height: 1.5rem;
+}
+/* 导航项目 */
+.g-navbar > .navbar-item {
+  color: #808080;
+  float: left;
+  width: 25%;
+  padding-top: 0.1rem;
+}
+/* 被选中的样式 */
+.g-navbar > .navbar-item.active {
+  color: #09BB07;
+}
+/* 导航图标 */
+/* 导航名称 */
+.g-navbar > .navbar-item > .name {
+  display: block;
+}
+/* 导航样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 底部导航栏样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+/* 底部导航栏样式 */
+.g-footer-height-max {
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+.g-footer-height-middle {
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+.g-footer-height-min {
+  height: 1rem;
+  line-height: 1rem;
+}
+.g-footer {
+  text-align: center;
+  position: fixed;
+  box-sizing: border-box;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  z-index: 200;
+  background-color: #aaaaaa;
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+/*flex布局(有兼容)*/
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 整体布局样式合并
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 头部样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 头部样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+.g-header-max {
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+.g-header-middle {
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+.g-header-min {
+  height: 1rem;
+  line-height: 1rem;
+}
+/* 页面头部固定 */
+.g-flex-header {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+  background-color: #4a90e2;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  /* 左侧功能区 */
+  /* 中间标题部分 */
+  /* 右侧功能区 */
+}
+.g-flex-header > .left {
+  text-align: center;
+  width: 2rem;
+  float: left;
+}
+.g-flex-header > .title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 2rem;
+  width: 6rem;
+  position: absolute;
+}
+.g-flex-header > .right {
+  text-align: center;
+  width: 2rem;
+  float: right;
+}
+/* 内容样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 布局内容样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+/* 内容区域 */
+.g-flex-content {
+  box-sizing: border-box;
+  overflow-y: auto;
+  flex: 1;
+}
+/* 底部导航样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 底部导航栏样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+/* 底部导航栏样式 */
+.g-navbar-height-max {
+  height: 1.5rem;
+}
+.g-navbar-height-middle {
+  height: 1.2rem;
+}
+.g-navbar-height-min {
+  height: 1rem;
+}
+.g-flex-navbar {
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  background-color: #aaaaaa;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 1.5rem;
+  /* 导航项目 */
+  /* 被选中的样式 */
+  /* 导航图标 */
+  /* 导航名称 */
+}
+.g-flex-navbar > .navbar-item {
+  color: #808080;
+  flex: 1;
+}
+.g-flex-navbar > .navbar-item.active {
+  color: #09BB07;
+}
+.g-flex-navbar > .navbar-item > .name {
+  display: block;
+}
+/* 导航样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 底部导航栏样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+/* 底部导航栏样式 */
+.g-footer-height-max {
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+.g-footer-height-middle {
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+.g-footer-height-min {
+  height: 1rem;
+  line-height: 1rem;
+}
+.g-footer {
+  text-align: center;
+  box-sizing: border-box;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  z-index: 200;
+  background-color: #aaaaaa;
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+/* flex 布局*/
+.g-flex-layout {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* 各个组件样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 自定义UI组件库/框架
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 面板组件样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 自定义UI组件库/框架
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+.g-panel .g-panel-title {
+  height: 1.8rem;
+  line-height: 1.8rem;
+  padding-left: 1rem;
+  color: #aaa;
+  background: #fff;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  font-weight: normal;
+}
+.g-panel .g-panel-body {
+  position: relative;
+  margin-bottom: 0.6rem;
+  padding: 0.6rem 1rem;
+  background: #fff;
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.g-panel .g-no-padding {
+  padding: 0;
+}

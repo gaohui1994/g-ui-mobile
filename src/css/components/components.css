@@ -1,0 +1,296 @@
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 自定义组件样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 面板组件样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 面板样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 公共样式配置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 媒体查询 --- 暂不使用 */
+/* 蒙版样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 遮罩层样式, 在多个地方都会用的, 放到公共样式中
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+.g-mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 300;
+}
+/* 内边距 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 内边距设置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+.g-padding-max1 {
+  padding: 0 1rem;
+}
+.g-padding-max1-all {
+  padding: 1rem;
+}
+.g-padding-max2 {
+  padding: 0 2rem;
+}
+.g-padding-max2-all {
+  padding: 2rem;
+}
+.g-padding-max3 {
+  padding: 0 3rem;
+}
+.g-padding-max3-all {
+  padding: 3rem;
+}
+.g-padding-max {
+  padding: 0 0.5rem;
+}
+.g-padding-max-all {
+  padding: 0.5rem;
+}
+.g-padding-middle {
+  padding: 0 0.3rem;
+}
+.g-padding-middle-all {
+  padding: 0.3rem;
+}
+.g-padding-min {
+  padding: 0 0.2rem;
+}
+.g-padding-min-all {
+  padding: 0.2rem;
+}
+.g-padding-no {
+  padding: 0rem;
+}
+/* 外边距 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 内边距设置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+.g-margin-max1 {
+  margin: 0 1rem;
+}
+.g-margin-max1-all {
+  margin: 1rem;
+}
+.g-margin-max2 {
+  margin: 0 2rem;
+}
+.g-margin-max2-all {
+  margin: 2rem;
+}
+.g-margin-max3 {
+  margin: 0 3rem;
+}
+.g-margin-max3-all {
+  margin: 3rem;
+}
+.g-margin-max {
+  margin: 0 0.5rem;
+}
+.g-margin-max-all {
+  margin: 0.5rem;
+}
+.g-margin-middle {
+  margin: 0 0.3rem;
+}
+.g-margin-middle-all {
+  margin: 0.3rem;
+}
+.g-margin-min {
+  margin: 0 0.2rem;
+}
+.g-margin-min-all {
+  margin: 0.2rem;
+}
+.g-margin-no {
+  margin: 0rem;
+}
+.g-panel .g-panel-title {
+  padding: 0.3rem;
+  color: #aaa;
+  background: #fff;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  font-weight: normal;
+}
+.g-panel .g-panel-body {
+  position: relative;
+  padding: 0.3rem;
+  background: #fff;
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+/* 表单组件样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 表单样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 主题定义
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* header 高度定义 */
+/* 主题色彩定义 */
+/* 背景色定义 */
+/* 透明色彩定义 */
+/* 统一字体 */
+/* 内边距统一设定 */
+/* 外边距统一设定 */
+.g-form-item {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  font-size: 0.4rem;
+  padding: 0.3rem 0;
+  /* 输入框 */
+  /* 自定义单选 */
+  /* 自定义多选 */
+}
+.g-form-item > .g-form-label {
+  display: block;
+  color: #666;
+  width: 1.5rem;
+}
+.g-form-item > .g-form-body {
+  flex: 1;
+  /* input 重置按钮 */
+  /* input 警示按钮 */
+}
+.g-form-item > .g-form-body > .g-input {
+  width: 100%;
+  border: none;
+  font-size: 0.4rem;
+}
+.g-form-item > .g-form-body > .g-input-reset {
+  position: absolute;
+  right: 0.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  text-align: center;
+  line-height: 0.5rem;
+  background: #aaa;
+  color: #fff;
+  border-radius: 50%;
+}
+.g-form-item > .g-form-body > .g-input-warning {
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  text-align: center;
+  line-height: 0.5rem;
+  border: 1px solid red;
+  color: red;
+  border-radius: 50%;
+  right: 0.5rem;
+  box-sizing: border-box;
+}
+.g-form-item > .g-radio {
+  flex: 1;
+  /* 未选中状态的图标 */
+  /* 选中状态的图标 */
+  /* 隐藏的radio类型的input */
+}
+.g-form-item > .g-radio > .g-radio-icon {
+  margin-right: 0.3rem;
+  color: #09BB07;
+  visibility: hidden;
+}
+.g-form-item > .g-radio .checked {
+  visibility: visible;
+}
+.g-form-item > .g-radio > .g-radio-input {
+  position: absolute;
+  left: -999rem;
+}
+.g-form-item > .g-check {
+  flex: 1;
+  font-size: 0.4rem;
+  /* 未选中时的图标 */
+  /* 选中时的图标 */
+  /* 隐藏的check类型的input */
+}
+.g-form-item > .g-check > .g-check-icon {
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0);
+  font-size: 0.4rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+}
+.g-form-item > .g-check > .checked {
+  background: #09BB07;
+  color: #fff;
+  border-color: rgba(0, 0, 0, 0);
+}
+.g-form-item > .g-check > .g-check-input {
+  position: absolute;
+  left: -999rem;
+}
+/* 去掉最后一行的下边框 */
+.g-form-item:last-child {
+  border-bottom: none;
+}
+/* 按钮组件样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 按钮组件样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 按钮组件样式 */

@@ -1,0 +1,169 @@
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 面板样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 公共样式配置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 媒体查询 --- 暂不使用 */
+/* 蒙版样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 遮罩层样式, 在多个地方都会用的, 放到公共样式中
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 主题定义
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* header 高度定义 */
+/* 主题色彩定义 */
+/* 背景色定义 */
+/* 透明色彩定义 */
+/* 统一字体 */
+/* 内边距统一设定 */
+/* 外边距统一设定 */
+.g-mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 300;
+}
+/* 内边距 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 内边距设置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+.g-padding-max1 {
+  padding: 0 1rem;
+}
+.g-padding-max1-all {
+  padding: 1rem;
+}
+.g-padding-max2 {
+  padding: 0 2rem;
+}
+.g-padding-max2-all {
+  padding: 2rem;
+}
+.g-padding-max3 {
+  padding: 0 3rem;
+}
+.g-padding-max3-all {
+  padding: 3rem;
+}
+.g-padding-max {
+  padding: 0 0.5rem;
+}
+.g-padding-max-all {
+  padding: 0.5rem;
+}
+.g-padding-middle {
+  padding: 0 0.3rem;
+}
+.g-padding-middle-all {
+  padding: 0.3rem;
+}
+.g-padding-min {
+  padding: 0 0.2rem;
+}
+.g-padding-min-all {
+  padding: 0.2rem;
+}
+.g-padding-no {
+  padding: 0rem;
+}
+/* 外边距 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 内边距设置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+.g-margin-max1 {
+  margin: 0 1rem;
+}
+.g-margin-max1-all {
+  margin: 1rem;
+}
+.g-margin-max2 {
+  margin: 0 2rem;
+}
+.g-margin-max2-all {
+  margin: 2rem;
+}
+.g-margin-max3 {
+  margin: 0 3rem;
+}
+.g-margin-max3-all {
+  margin: 3rem;
+}
+.g-margin-max {
+  margin: 0 0.5rem;
+}
+.g-margin-max-all {
+  margin: 0.5rem;
+}
+.g-margin-middle {
+  margin: 0 0.3rem;
+}
+.g-margin-middle-all {
+  margin: 0.3rem;
+}
+.g-margin-min {
+  margin: 0 0.2rem;
+}
+.g-margin-min-all {
+  margin: 0.2rem;
+}
+.g-margin-no {
+  margin: 0rem;
+}
+.g-panel .g-panel-title {
+  padding: 0.3rem;
+  color: #aaa;
+  background: #fff;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  font-weight: normal;
+}
+.g-panel .g-panel-body {
+  position: relative;
+  padding: 0.3rem;
+  background: #fff;
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}

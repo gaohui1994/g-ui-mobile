@@ -1,0 +1,78 @@
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 按钮组件样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+
+@import '../../theme/theme.less';
+@import '../../common/common.less';
+
+/* 按钮组件样式 */
+
+
+/* 默认样式 */
+
+.g-btn {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: @padding-small 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: @small-font-size;
+    text-align: center;
+    color: #000000;
+    border-radius: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    user-select: none;
+}
+
+
+/* 中按钮 */
+
+.g-btn-middle {
+    padding: @padding-middle 0;
+}
+
+
+/* 大按钮 */
+
+.g-btn-large {
+    padding: @padding-large 0;
+}
+
+
+/* 主操作按钮 */
+
+.g-btn-primary {
+    background-color: #1AAD19;
+    color: #fff;
+}
+
+
+/* 警示按钮 */
+
+.g-btn-warning {
+    background-color: #E64340;
+    color: #fff;
+}
+
+
+/* 不可用按钮 */
+
+.g-btn-disabled {
+    background-color: #F7F7F7;
+    color: #999;
+    opacity: .6;
+}
+
+.g-btn-disabled:hover {
+    cursor: not-allowed;
+}

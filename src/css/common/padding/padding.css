@@ -1,0 +1,64 @@
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 内边距设置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 主题定义
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* header 高度定义 */
+/* 主题色彩定义 */
+/* 背景色定义 */
+/* 透明色彩定义 */
+/* 统一字体 */
+/* 内边距统一设定 */
+/* 外边距统一设定 */
+.g-padding-max1 {
+  padding: 0 1rem;
+}
+.g-padding-max1-all {
+  padding: 1rem;
+}
+.g-padding-max2 {
+  padding: 0 2rem;
+}
+.g-padding-max2-all {
+  padding: 2rem;
+}
+.g-padding-max3 {
+  padding: 0 3rem;
+}
+.g-padding-max3-all {
+  padding: 3rem;
+}
+.g-padding-max {
+  padding: 0 0.5rem;
+}
+.g-padding-max-all {
+  padding: 0.5rem;
+}
+.g-padding-middle {
+  padding: 0 0.3rem;
+}
+.g-padding-middle-all {
+  padding: 0.3rem;
+}
+.g-padding-min {
+  padding: 0 0.2rem;
+}
+.g-padding-min-all {
+  padding: 0.2rem;
+}
+.g-padding-no {
+  padding: 0rem;
+}

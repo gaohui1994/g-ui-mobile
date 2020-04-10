@@ -1,0 +1,111 @@
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 表单样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+
+@import '../../theme/theme.less';
+@import '../../common/common.less';
+.g-form-item {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    font-size: @small-font-size;
+    padding: @interval-middle 0;
+    >.g-form-label {
+        display: block;
+        color: #666;
+        width: 1.5rem;
+    }
+    /* 输入框 */
+    >.g-form-body {
+        flex: 1;
+        >.g-input {
+            width: 100%;
+            border: none;
+            font-size: @small-font-size;
+        }
+        /* input 重置按钮 */
+        >.g-input-reset {
+            position: absolute;
+            right: @interval-large;
+            width: @interval-large;
+            height: @interval-large;
+            text-align: center;
+            line-height: @interval-large;
+            background: #aaa;
+            color: #fff;
+            border-radius: 50%;
+        }
+        /* input 警示按钮 */
+        >.g-input-warning {
+            position: absolute;
+            width: @interval-large;
+            height: @interval-large;
+            text-align: center;
+            line-height: @interval-large;
+            border: 1px solid red;
+            color: red;
+            border-radius: 50%;
+            right: @interval-large;
+            box-sizing: border-box;
+        }
+    }
+    /* 自定义单选 */
+    >.g-radio {
+        flex: 1;
+        /* 未选中状态的图标 */
+        >.g-radio-icon {
+            margin-right: @interval-middle;
+            color: #09BB07;
+            visibility: hidden;
+        }
+        /* 选中状态的图标 */
+        .checked {
+            visibility: visible;
+        }
+        /* 隐藏的radio类型的input */
+        >.g-radio-input {
+            position: absolute;
+            left: -999rem;
+        }
+    }
+    /* 自定义多选 */
+    >.g-check {
+        flex: 1;
+        font-size: @small-font-size;
+        /* 未选中时的图标 */
+        >.g-check-icon {
+            margin-right: @interval-large;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            color: rgba(0, 0, 0, 0);
+            font-size: @small-font-size;
+            width:  @interval-large;
+            height:  @interval-large;
+            line-height: @interval-large;
+        }
+        /* 选中时的图标 */
+        >.checked {
+            background: #09BB07;
+            color: #fff;
+            border-color: rgba(0, 0, 0, 0)
+        }
+        /* 隐藏的check类型的input */
+        >.g-check-input {
+            position: absolute;
+            left: -999rem;
+        }
+    }
+}
+
+
+/* 去掉最后一行的下边框 */
+
+.g-form-item:last-child {
+    border-bottom: none;
+}

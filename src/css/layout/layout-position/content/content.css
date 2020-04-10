@@ -1,0 +1,56 @@
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 布局内容样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 主题定义
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* header 高度定义 */
+/* 主题色彩定义 */
+/* 背景色定义 */
+/* 透明色彩定义 */
+/* 统一字体 */
+/* 内边距统一设定 */
+/* 外边距统一设定 */
+/* 内容区域 */
+.g-content {
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+}
+.g-header ~ .g-content {
+  padding-top: 1.2rem;
+}
+.g-navbar ~ .g-content {
+  padding-bottom: 1.2rem;
+}
+.g-header-large ~ .g-content {
+  padding-top: 1.5rem;
+}
+.g-navbar-large ~ .g-content {
+  padding-bottom: 1.5rem;
+}
+.g-header-middle ~ .g-content {
+  padding-top: 1.2rem;
+}
+.g-navbar-middle ~ .g-content {
+  padding-bottom: 1.2rem;
+}
+.g-header-small ~ .g-content {
+  padding-top: 1rem;
+}
+.g-navbar-small ~ .g-content {
+  padding-bottom: 1rem;
+}

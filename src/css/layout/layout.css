@@ -1,0 +1,207 @@
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 整体布局样式合并
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 头部样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 头部样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 主题定义
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* header 高度定义 */
+/* 主题色彩定义 */
+/* 背景色定义 */
+/* 透明色彩定义 */
+/* 统一字体 */
+.g-header-max {
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+.g-header-middle {
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+.g-header-min {
+  height: 1rem;
+  line-height: 1rem;
+}
+/* 页面头部固定 */
+.g-header {
+  overflow: hidden;
+  text-align: center;
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  top: 0;
+  z-index: 200;
+  border-bottom: 1px solid #ddd;
+  background-color: #4a90e2;
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+/* 左侧功能区 */
+.g-header > .left {
+  text-align: center;
+  width: 2rem;
+  float: left;
+}
+/* 中间标题部分 */
+.g-header > .title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 2rem;
+  width: 6rem;
+  position: absolute;
+}
+/* 右侧功能区 */
+.g-header > .right {
+  text-align: center;
+  width: 2rem;
+  float: right;
+}
+/* 内容样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 布局内容样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+/* 内容区域 */
+.g-content {
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+}
+.g-header ~ .g-content {
+  padding-top: 1.2rem;
+}
+.g-navbar ~ .g-content {
+  padding-bottom: 1.2rem;
+}
+.g-header-max ~ .g-content {
+  padding-top: 1.5rem;
+}
+.g-navbar-max ~ .g-content {
+  padding-bottom: 1.5rem;
+}
+.g-header-middle ~ .g-content {
+  padding-top: 1.2rem;
+}
+.g-navbar-middle ~ .g-content {
+  padding-bottom: 1.2rem;
+}
+.g-header-min ~ .g-content {
+  padding-top: 1rem;
+}
+.g-navbar-min ~ .g-content {
+  padding-bottom: 1rem;
+}
+/* 底部导航样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 底部导航栏样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+/* 底部导航栏样式 */
+.g-navbar-height-max {
+  height: 1.5rem;
+}
+.g-navbar-height-middle {
+  height: 1.2rem;
+}
+.g-navbar-height-min {
+  height: 1rem;
+}
+.g-navbar {
+  text-align: center;
+  position: fixed;
+  box-sizing: border-box;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  z-index: 200;
+  background-color: #aaaaaa;
+  overflow: hidden;
+  height: 1.5rem;
+}
+/* 导航项目 */
+.g-navbar > .navbar-item {
+  color: #808080;
+  float: left;
+  width: 25%;
+  padding-top: 0.1rem;
+}
+/* 被选中的样式 */
+.g-navbar > .navbar-item.active {
+  color: #09BB07;
+}
+/* 导航图标 */
+/* 导航名称 */
+.g-navbar > .navbar-item > .name {
+  display: block;
+}
+/* 导航样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 底部导航栏样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+/* 底部导航栏样式 */
+.g-footer-height-max {
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+.g-footer-height-middle {
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+.g-footer-height-min {
+  height: 1rem;
+  line-height: 1rem;
+}
+.g-footer {
+  text-align: center;
+  position: fixed;
+  box-sizing: border-box;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  z-index: 200;
+  background-color: #aaaaaa;
+  height: 1.2rem;
+  line-height: 1.2rem;
+}

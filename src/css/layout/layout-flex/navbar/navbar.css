@@ -1,0 +1,61 @@
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 底部导航栏样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 主题定义
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* header 高度定义 */
+/* 主题色彩定义 */
+/* 背景色定义 */
+/* 透明色彩定义 */
+/* 统一字体 */
+/* 内边距统一设定 */
+/* 外边距统一设定 */
+/* 底部导航栏样式 */
+.g-navbar-height-large {
+  height: 1.5rem;
+}
+.g-navbar-height-middle {
+  height: 1.2rem;
+}
+.g-navbar-height-small {
+  height: 1rem;
+}
+.g-flex-navbar {
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  background-color: #aaaaaa;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 1.5rem;
+  /* 导航项目 */
+  /* 被选中的样式 */
+  /* 导航图标 */
+  /* 导航名称 */
+}
+.g-flex-navbar > .navbar-item {
+  color: #808080;
+  flex: 1;
+}
+.g-flex-navbar > .navbar-item.active {
+  color: #09BB07;
+}
+.g-flex-navbar > .navbar-item > .name {
+  display: block;
+}
