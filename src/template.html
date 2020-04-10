@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta hgp-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+
+	<body>
+
+		<a class="g-btn" id="js-show">显示弹出式菜单</a>
+
+		<hr />
+
+		<div class="g-action-sheet">
+			<div class="g-mask"></div>
+			<div class="g-action-sheet-wrap">
+				<div class="g-action-sheet-header">
+					<h1 class="g-action-sheet-title">你需要做什么操作？</h1>
+				</div>
+				<div class="g-action-sheet-body">
+					<a class="g-action-sheet-menu">收藏</a>
+					<a class="g-action-sheet-menu">关注</a>
+					<a class="g-action-sheet-menu">分享给好友</a>
+				</div>
+				<div class="g-action-sheet-footer">
+					<a class="g-action-sheet-menu" id="js-close">取消</a>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
+<script src="index.js"></script>
+<script>
+	window.onload = () => {
+		// 弹出菜单
+		document.querySelector('#js-show').onclick = (e) => {
+			document.querySelector('.g-action-sheet').classList.add('show');
+		}
+		// 收回菜单
+		document.querySelector('#js-close').onclick = (e) => {
+			document.querySelector('.g-action-sheet').classList.remove('show');
+		}
+	};
+</script>

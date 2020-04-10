@@ -1,13 +1,13 @@
 {
   "name": "glodonui",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "自建UI框架学习",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --contentbase src --inline --hot --open",
     "dev": "nodemon --watch webpack.config.js --exec npm run start",
-    "build": "node webpack-build.js"
+    "build": "nodemon --watch webpack.build.js --exec node webpack.build.js"
   },
   "keywords": [],
   "author": "",

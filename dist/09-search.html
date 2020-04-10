@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta hgp-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+
+	<body>
+		<!-- 带suggest的搜索框 -->
+		<div class="g-search on-focus">
+			<!-- 搜索框 -->
+			<form class="g-search-form" action="#">
+				<div class="g-search-input-wrap">
+					<i class="fa fa-search g-search-icon"></i>
+					<input type="text" class="g-search-input" placeholder="搜索" autocomplete="off" required/>
+					<i class="fa fa-close g-search-clear"></i>
+				</div>
+				<span class="g-search-cancel">取消</span>
+			</form>
+			<!-- 搜索建议 -->
+			<ul class="g-search-suggest">
+				<li class="g-suggest-item">手机</li>
+				<li class="g-suggest-item">iPhone XS Max</li>
+				<li class="g-suggest-item">华为P30</li>
+				<li class="g-suggest-item">小米 MIX3</li>
+				<li class="g-suggest-item">诺基亚1110</li>
+			</ul>
+		</div>
+	</body>
+
+</html>
+<script src="index.js"></script>

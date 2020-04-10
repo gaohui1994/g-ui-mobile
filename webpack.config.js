@@ -100,7 +100,8 @@ module.exports = {
 		new webpack.HotModuleReplacementPlugin(),
 		// 定义当前服务依赖的模板
 		new HtmlWebpackPlugin({
-			template: './src/index.html'
+			template: './src/template.html',
+			filename:'./src/template.html'
 		}),
 		new MiniCssExtractPlugin({
 			filename: 'index.css'
