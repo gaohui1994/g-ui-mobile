@@ -1,0 +1,60 @@
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 网格组件样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+
+@import '../../theme/theme.less';
+@import '../../common/common.less';
+
+/* 页面加载提示组件 */
+
+.g-loading {
+    padding: 1rem 0;
+    text-align: center;
+    /* 页面加载提示组件的图标 */
+    .g-loading-icon {
+        font-size: 1rem;
+        color: rgba(0, 0, 0, .05);
+    }
+    /* 页面加载提示组件的提示信息 */
+    .g-loading-info {
+        display: block;
+        margin-top: @interval-middle;
+        font-size: @default-font-size;
+        color: #ccc;
+    }
+}
+
+
+/* 单行加载提示组件 */
+
+.g-loading-inline {
+    margin: @interval-middle auto @interval-small;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    color: #999;
+    height: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    /* 单行加载提示组件的文本信息 */
+    .g-loading-info {
+        display: inline-block;
+        padding: 0 @interval-middle;
+        position: relative;
+        top: -@interval-large;
+        height: 1rem;
+        line-height: 1rem;
+        font-size: @default-font-size;
+        background: #fff;
+        /* 单行加载提示组件的图标 */
+        .g-loading-icon {
+            color: rgba(0, 0, 0, .2);
+        }
+    }
+}

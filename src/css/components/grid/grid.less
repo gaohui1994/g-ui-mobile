@@ -1,0 +1,110 @@
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 网格组件样式
+ * @Date: 2020-02-02
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+
+@import '../../theme/theme.less';
+@import '../../common/common.less';
+
+/* 网格组件 */
+
+.g-grid {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #ddd;
+    /* 网格中的格子 */
+    .g-grid-item {
+        position: relative;
+        flex: 1 1 33%;
+        box-sizing: border-box;
+        padding: @interval-small 0;
+        text-align: center;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        background: #fff;
+        /* grid内容区 */
+        .g-grid-icon {
+            font-size: 1.2rem;
+            color: #aaa;
+            margin-bottom: .5rem;
+        }
+        .g-grid-label {
+            color: #333;
+        }
+    }
+    /* 去除最后一列的边框 */
+    .g-grid-item:nth-child(3n) {
+        border-right: none;
+    }
+}
+
+
+/* 不需要边框时取消容器上的border */
+
+.g-grid.no-border {
+    border: none;
+    .g-grid-item {
+        border: none !important;
+    }
+}
+
+
+/* 两列网格 */
+
+.g-grid.g-grid-2 {
+    .g-grid-item {
+        border-right: 1px solid #ddd;
+        flex-basis: 50%;
+       padding: @interval-small 0;
+    }
+    .g-grid-item:nth-child(2n) {
+        border-right: none;
+    }
+}
+
+
+/* 三列网格 */
+
+.g-grid.g-grid-3 {
+    .g-grid-item {
+        border-right: 1px solid #ddd;
+        flex-basis: 33%;
+        padding: @interval-small 0;
+    }
+    .g-grid-item:nth-child(3n) {
+        border-right: none;
+    }
+}
+
+
+/* 四列网格 */
+
+.g-grid.g-grid-4 {
+    .g-grid-item {
+        border-right: 1px solid #ddd;
+        flex-basis: 25%;
+        padding: @interval-small 0;
+    }
+    .g-grid-item:nth-child(4n) {
+        border-right: none;
+    }
+}
+
+
+/* 五列网格 */
+
+.g-grid.g-grid-5 {
+    .g-grid-item {
+        border-right: 1px solid #ddd;
+        flex-basis: 20%;
+        padding: @interval-small 0;
+    }
+    .g-grid-item:nth-child(5n) {
+        border-right: none;
+    }
+}

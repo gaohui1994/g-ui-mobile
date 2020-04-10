@@ -2,7 +2,7 @@
  * 
  * @Author: gaohui 
  * @descripe: 按钮组件样式
- * @Date: 2020-04-08
+ * @Date: 2020-02-02
  * @Last Modified by: gaohui
  * @Last Modified time: 2020-04-08
  * 
@@ -21,13 +21,14 @@
 /* 背景色定义 */
 /* 透明色彩定义 */
 /* 统一字体 */
+/* 列表高度统一 */
 /* 内边距统一设定 */
 /* 外边距统一设定 */
 /*
  * 
  * @Author: gaohui 
  * @descripe: 公共样式配置
- * @Date: 2020-04-08
+ * @Date: 2020-02-02
  * @Last Modified by: gaohui
  * @Last Modified time: 2020-04-08
  * 
@@ -38,7 +39,7 @@
  * 
  * @Author: gaohui 
  * @descripe: 遮罩层样式, 在多个地方都会用的, 放到公共样式中
- * @Date: 2020-04-08
+ * @Date: 2020-02-02
  * @Last Modified by: gaohui
  * @Last Modified time: 2020-04-08
  * 
@@ -58,7 +59,7 @@
  * 
  * @Author: gaohui 
  * @descripe: 内边距设置
- * @Date: 2020-04-08
+ * @Date: 2020-02-02
  * @Last Modified by: gaohui
  * @Last Modified time: 2020-04-08
  * 
@@ -107,7 +108,7 @@
  * 
  * @Author: gaohui 
  * @descripe: 内边距设置
- * @Date: 2020-04-08
+ * @Date: 2020-02-02
  * @Last Modified by: gaohui
  * @Last Modified time: 2020-04-08
  * 
@@ -196,4 +197,8 @@
 }
 .g-btn-disabled:hover {
   cursor: not-allowed;
+}
+.g-btn-link {
+  border: 0;
+  color: #204A87;
 }

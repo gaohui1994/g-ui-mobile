@@ -1,0 +1,249 @@
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 搜索框组件
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 主题定义
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* header 高度定义 */
+/* 主题色彩定义 */
+/* 背景色定义 */
+/* 透明色彩定义 */
+/* 统一字体 */
+/* 内边距统一设定 */
+/* 外边距统一设定 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 公共样式配置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 媒体查询 --- 暂不使用 */
+/* 蒙版样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 遮罩层样式, 在多个地方都会用的, 放到公共样式中
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+.g-mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 300;
+}
+/* 内边距 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 内边距设置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+.g-padding-large1 {
+  padding: 0 1rem;
+}
+.g-padding-large1-all {
+  padding: 1rem;
+}
+.g-padding-large2 {
+  padding: 0 2rem;
+}
+.g-padding-large2-all {
+  padding: 2rem;
+}
+.g-padding-large3 {
+  padding: 0 3rem;
+}
+.g-padding-large3-all {
+  padding: 3rem;
+}
+.g-padding-large {
+  padding: 0 0.5rem;
+}
+.g-padding-large-all {
+  padding: 0.5rem;
+}
+.g-padding-middle {
+  padding: 0 0.3rem;
+}
+.g-padding-middle-all {
+  padding: 0.3rem;
+}
+.g-padding-small {
+  padding: 0 0.2rem;
+}
+.g-padding-small-all {
+  padding: 0.2rem;
+}
+.g-padding-no {
+  padding: 0rem;
+}
+/* 外边距 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 内边距设置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+.g-margin-large1 {
+  margin: 0 1rem;
+}
+.g-margin-large1-all {
+  margin: 1rem;
+}
+.g-margin-large2 {
+  margin: 0 2rem;
+}
+.g-margin-large2-all {
+  margin: 2rem;
+}
+.g-margin-large3 {
+  margin: 0 3rem;
+}
+.g-margin-large3-all {
+  margin: 3rem;
+}
+.g-margin-large {
+  margin: 0 0.5rem;
+}
+.g-margin-large-all {
+  margin: 0.5rem;
+}
+.g-margin-middle {
+  margin: 0 0.3rem;
+}
+.g-margin-middle-all {
+  margin: 0.3rem;
+}
+.g-margin-small {
+  margin: 0 0.2rem;
+}
+.g-margin-small-all {
+  margin: 0.2rem;
+}
+.g-margin-no {
+  margin: 0rem;
+}
+/* 搜索框 */
+.g-search {
+  background: #f8f8f8;
+  margin: auto;
+  position: relative;
+}
+/* .g-search.on-focus + .g-page-wrap{
+    display: none;
+} */
+/* 搜索栏中的表单 */
+.g-search > .g-search-form {
+  display: flex;
+  align-items: center;
+}
+/* 输入框的容器 */
+.g-search > .g-search-form > .g-search-input-wrap {
+  flex: 1;
+  position: relative;
+  padding: 0 0.2rem;
+  margin: 0.3rem 0;
+}
+/* 搜索图标 */
+.g-search .g-search-icon {
+  position: absolute;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  font-size: 0.5rem;
+  left: 0.5rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  color: #ccc;
+}
+/* 输入框的样式 */
+.g-search .g-search-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 0.5rem;
+  background: #fff;
+  border-radius: 0.1rem;
+}
+/* 清空按钮的样式 */
+.g-search .g-search-clear {
+  position: absolute;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  width: 0.5rem;
+  font-size: 0.5rem;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  right: 0.5rem;
+  border-radius: 50%;
+  color: #fff;
+  background: #ccc;
+  display: none;
+}
+/* 对清空按钮的控制 */
+.g-search.on-focus .g-search-input:valid + .g-search-clear {
+  display: block;
+  text-align: center;
+}
+/* 取消按钮 */
+.g-search > .g-search-form > .g-search-cancel {
+  display: none;
+}
+/* 对取消按钮的控制 */
+.g-search.on-focus > .g-search-form > .g-search-cancel {
+  width: 1rem;
+  padding-right: 0.2rem;
+  text-align: center;
+  font-size: 0.5rem;
+  display: block;
+}
+/* 搜索建议 */
+.g-search > .g-search-suggest {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+.g-search.on-focus > .g-search-suggest {
+  display: block;
+}
+/* 搜索建议的内容 */
+.g-search > .g-search-suggest > .g-suggest-item {
+  padding-left: 0.5rem;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.5rem;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}

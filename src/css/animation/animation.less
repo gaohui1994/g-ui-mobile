@@ -1,0 +1,29 @@
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 公共样式配置
+ * @Date: 2020-02-02
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+
+
+/* 垂直方向上振动 */
+.fa-vibrate-y{
+    animation: fa-vibrate-y 1.5s infinite ease-in;
+}
+/* 振动轨迹 */
+@keyframes fa-vibrate-y{
+    0% {
+        transform: translateY(-10%);
+    }
+    50% {
+        transform: translateY(10%);
+    }
+    100% {
+        transform: translateY(-10%);
+    }
+}
+/* font-awesome定义, 引入相关类之后 , 直接添加 class 即可 旋转 */
+// 添加class .fa-spin 即可

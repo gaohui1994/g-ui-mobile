@@ -1,0 +1,226 @@
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 网格组件样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 主题定义
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* header 高度定义 */
+/* 主题色彩定义 */
+/* 背景色定义 */
+/* 透明色彩定义 */
+/* 统一字体 */
+/* 内边距统一设定 */
+/* 外边距统一设定 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 公共样式配置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 媒体查询 --- 暂不使用 */
+/* 蒙版样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 遮罩层样式, 在多个地方都会用的, 放到公共样式中
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 引用变量 */
+.g-mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 300;
+}
+/* 内边距 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 内边距设置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+.g-padding-large1 {
+  padding: 0 1rem;
+}
+.g-padding-large1-all {
+  padding: 1rem;
+}
+.g-padding-large2 {
+  padding: 0 2rem;
+}
+.g-padding-large2-all {
+  padding: 2rem;
+}
+.g-padding-large3 {
+  padding: 0 3rem;
+}
+.g-padding-large3-all {
+  padding: 3rem;
+}
+.g-padding-large {
+  padding: 0 0.5rem;
+}
+.g-padding-large-all {
+  padding: 0.5rem;
+}
+.g-padding-middle {
+  padding: 0 0.3rem;
+}
+.g-padding-middle-all {
+  padding: 0.3rem;
+}
+.g-padding-small {
+  padding: 0 0.2rem;
+}
+.g-padding-small-all {
+  padding: 0.2rem;
+}
+.g-padding-no {
+  padding: 0rem;
+}
+/* 外边距 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 内边距设置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+.g-margin-large1 {
+  margin: 0 1rem;
+}
+.g-margin-large1-all {
+  margin: 1rem;
+}
+.g-margin-large2 {
+  margin: 0 2rem;
+}
+.g-margin-large2-all {
+  margin: 2rem;
+}
+.g-margin-large3 {
+  margin: 0 3rem;
+}
+.g-margin-large3-all {
+  margin: 3rem;
+}
+.g-margin-large {
+  margin: 0 0.5rem;
+}
+.g-margin-large-all {
+  margin: 0.5rem;
+}
+.g-margin-middle {
+  margin: 0 0.3rem;
+}
+.g-margin-middle-all {
+  margin: 0.3rem;
+}
+.g-margin-small {
+  margin: 0 0.2rem;
+}
+.g-margin-small-all {
+  margin: 0.2rem;
+}
+.g-margin-no {
+  margin: 0rem;
+}
+/* 弹出菜单的样式文件 */
+/* 默认隐藏蒙版 */
+.g-action-sheet {
+  /* 弹出菜单容器，默认隐藏在屏幕的下面 */
+}
+.g-action-sheet .g-mask {
+  opacity: 0;
+  /* 屏蔽元素的点击事件 */
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.g-action-sheet .g-action-sheet-wrap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #eee;
+  transition: transform 0.3s ease;
+  transform: translateY(100%);
+  z-index: 301;
+  /* 弹出菜单头部 */
+  /* 中间主要内容区 */
+  /* 菜单尾部，通常用来放取消按钮 */
+  /* 每个菜单项 */
+  /* 菜单项的边框控制 */
+}
+.g-action-sheet .g-action-sheet-wrap .g-action-sheet-header {
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  /* 头部标题，用来描述菜单作用 */
+}
+.g-action-sheet .g-action-sheet-wrap .g-action-sheet-header .g-action-sheet-title {
+  flex: 1;
+  padding: 0.3rem;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.g-action-sheet .g-action-sheet-wrap .g-action-sheet-body {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+.g-action-sheet .g-action-sheet-wrap .g-action-sheet-footer {
+  margin-top: 0.2rem;
+  background: #fff;
+}
+.g-action-sheet .g-action-sheet-wrap .g-action-sheet-menu {
+  display: block;
+  padding: 0.3rem;
+  text-align: center;
+}
+.g-action-sheet .g-action-sheet-wrap .g-action-sheet-menu + .g-action-sheet-menu {
+  display: block;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* 菜单弹出的时候显示蒙版 */
+.g-action-sheet.show {
+  /* 菜单弹出的时候，改变容器位移 */
+}
+.g-action-sheet.show .g-mask {
+  opacity: 1;
+  pointer-events: auto;
+}
+.g-action-sheet.show .g-action-sheet-wrap {
+  transform: translateY(0);
+}

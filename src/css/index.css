@@ -2,26 +2,11 @@
  * 
  * @Author: gaohui 
  * @descripe: 自定义UI组件库/框架
- * @Date: 2020-04-08
+ * @Date: 2020-02-02
  * @Last Modified by: gaohui
  * @Last Modified time: 2020-04-08
  * 
  * */
-/* 字体图标 */
-/*
- * 
- * @Author: gaohui 
- * @descripe: 字体图标样式
- * @Date: 2020-04-08
- * @Last Modified by: gaohui
- * @Last Modified time: 2020-04-08
- * 
- * */
-/* 字体图标，依赖font-awesome */
-@import 'font-awesome/css/font-awesome.min.css';
-/* 字体图标，依赖iconfont */
-@import 'iconfont/iconfont.css';
-/* 可以在这里进行字体样式的重置 */
 /* css reset */
 /*
  * 
@@ -33,6 +18,8 @@
  * 
  * */
 /* 去掉所有元素的内外边距 */
+@import 'font-awesome/css/font-awesome.min.css';
+@import 'iconfont/iconfont.css';
 html,
 body,
 div,
@@ -171,9 +158,25 @@ a {
 /* 背景色定义 */
 /* 透明色彩定义 */
 /* 统一字体 */
+/* 列表高度统一 */
+/* 内边距统一设定 */
+/* 外边距统一设定 */
 body {
   font-size: 0.5rem !important;
 }
+/* 字体图标 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 字体图标样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 字体图标，依赖font-awesome */
+/* 字体图标，依赖iconfont */
+/* 可以在这里进行字体样式的重置 */
 /* 公共样式 */
 /*
  * 
@@ -215,15 +218,121 @@ body {
  * @Last Modified time: 2020-04-08
  * 
  * */
-.g-padding-max {
+.g-padding-large1 {
+  padding: 0 1rem;
+}
+.g-padding-large1-all {
   padding: 1rem;
 }
-.g-padding-middle {
-  padding: 0.8rem;
+.g-padding-large2 {
+  padding: 0 2rem;
 }
-.g-padding-min {
+.g-padding-large2-all {
+  padding: 2rem;
+}
+.g-padding-large3 {
+  padding: 0 3rem;
+}
+.g-padding-large3-all {
+  padding: 3rem;
+}
+.g-padding-large {
+  padding: 0 0.5rem;
+}
+.g-padding-large-all {
   padding: 0.5rem;
 }
+.g-padding-middle {
+  padding: 0 0.3rem;
+}
+.g-padding-middle-all {
+  padding: 0.3rem;
+}
+.g-padding-small {
+  padding: 0 0.2rem;
+}
+.g-padding-small-all {
+  padding: 0.2rem;
+}
+.g-padding-no {
+  padding: 0rem;
+}
+/* 外边距 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 内边距设置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+.g-margin-large1 {
+  margin: 0 1rem;
+}
+.g-margin-large1-all {
+  margin: 1rem;
+}
+.g-margin-large2 {
+  margin: 0 2rem;
+}
+.g-margin-large2-all {
+  margin: 2rem;
+}
+.g-margin-large3 {
+  margin: 0 3rem;
+}
+.g-margin-large3-all {
+  margin: 3rem;
+}
+.g-margin-large {
+  margin: 0 0.5rem;
+}
+.g-margin-large-all {
+  margin: 0.5rem;
+}
+.g-margin-middle {
+  margin: 0 0.3rem;
+}
+.g-margin-middle-all {
+  margin: 0.3rem;
+}
+.g-margin-small {
+  margin: 0 0.2rem;
+}
+.g-margin-small-all {
+  margin: 0.2rem;
+}
+.g-margin-no {
+  margin: 0rem;
+}
+/* 动画样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 公共样式配置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 垂直方向上振动 */
+.fa-vibrate-y {
+  animation: fa-vibrate-y 1.5s infinite ease-in;
+}
+/* 振动轨迹 */
+@keyframes fa-vibrate-y {
+  0% {
+    transform: translateY(-10%);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}
+/* font-awesome定义, 引入相关类之后 , 直接添加 class 即可 旋转 */
 /* 布局样式 */
 /*
  * 
@@ -245,7 +354,7 @@ body {
  * 
  * */
 /* 引用变量 */
-.g-header-max {
+.g-header-large {
   height: 1.5rem;
   line-height: 1.5rem;
 }
@@ -253,7 +362,7 @@ body {
   height: 1.2rem;
   line-height: 1.2rem;
 }
-.g-header-min {
+.g-header-small {
   height: 1rem;
   line-height: 1rem;
 }
@@ -308,6 +417,7 @@ body {
   box-sizing: border-box;
   position: relative;
   overflow-y: auto;
+  padding: 0.2rem 0.3rem;
 }
 .g-header ~ .g-content {
   padding-top: 1.2rem;
@@ -315,10 +425,10 @@ body {
 .g-navbar ~ .g-content {
   padding-bottom: 1.2rem;
 }
-.g-header-max ~ .g-content {
+.g-header-large ~ .g-content {
   padding-top: 1.5rem;
 }
-.g-navbar-max ~ .g-content {
+.g-navbar-large ~ .g-content {
   padding-bottom: 1.5rem;
 }
 .g-header-middle ~ .g-content {
@@ -327,10 +437,10 @@ body {
 .g-navbar-middle ~ .g-content {
   padding-bottom: 1.2rem;
 }
-.g-header-min ~ .g-content {
+.g-header-small ~ .g-content {
   padding-top: 1rem;
 }
-.g-navbar-min ~ .g-content {
+.g-navbar-small ~ .g-content {
   padding-bottom: 1rem;
 }
 /* 底部导航样式 */
@@ -394,7 +504,7 @@ body {
  * */
 /* 引用变量 */
 /* 底部导航栏样式 */
-.g-footer-height-max {
+.g-footer-height-large {
   height: 1.5rem;
   line-height: 1.5rem;
 }
@@ -402,7 +512,7 @@ body {
   height: 1.2rem;
   line-height: 1.2rem;
 }
-.g-footer-height-min {
+.g-footer-height-small {
   height: 1rem;
   line-height: 1rem;
 }
@@ -439,7 +549,7 @@ body {
  * 
  * */
 /* 引用变量 */
-.g-header-max {
+.g-header-large {
   height: 1.5rem;
   line-height: 1.5rem;
 }
@@ -447,7 +557,7 @@ body {
   height: 1.2rem;
   line-height: 1.2rem;
 }
-.g-header-min {
+.g-header-small {
   height: 1rem;
   line-height: 1rem;
 }
@@ -498,6 +608,7 @@ body {
   box-sizing: border-box;
   overflow-y: auto;
   flex: 1;
+  padding: 0.2rem 0.3rem;
 }
 /* 底部导航样式 */
 /*
@@ -511,13 +622,13 @@ body {
  * */
 /* 引用变量 */
 /* 底部导航栏样式 */
-.g-navbar-height-max {
+.g-navbar-height-large {
   height: 1.5rem;
 }
 .g-navbar-height-middle {
   height: 1.2rem;
 }
-.g-navbar-height-min {
+.g-navbar-height-small {
   height: 1rem;
 }
 .g-flex-navbar {
@@ -557,7 +668,7 @@ body {
  * */
 /* 引用变量 */
 /* 底部导航栏样式 */
-.g-footer-height-max {
+.g-footer-height-large {
   height: 1.5rem;
   line-height: 1.5rem;
 }
@@ -565,7 +676,7 @@ body {
   height: 1.2rem;
   line-height: 1.2rem;
 }
-.g-footer-height-min {
+.g-footer-height-small {
   height: 1rem;
   line-height: 1rem;
 }
@@ -591,41 +702,864 @@ body {
 /*
  * 
  * @Author: gaohui 
- * @descripe: 自定义UI组件库/框架
+ * @descripe: 自定义组件样式
  * @Date: 2020-04-08
  * @Last Modified by: gaohui
  * @Last Modified time: 2020-04-08
  * 
  * */
+/* 弹出式菜单组件样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 网格组件样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 弹出菜单的样式文件 */
+/* 默认隐藏蒙版 */
+.g-action-sheet {
+  /* 弹出菜单容器，默认隐藏在屏幕的下面 */
+}
+.g-action-sheet .g-mask {
+  opacity: 0;
+  /* 屏蔽元素的点击事件 */
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.g-action-sheet .g-action-sheet-wrap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #eee;
+  transition: transform 0.3s ease;
+  transform: translateY(100%);
+  z-index: 301;
+  /* 弹出菜单头部 */
+  /* 中间主要内容区 */
+  /* 菜单尾部，通常用来放取消按钮 */
+  /* 每个菜单项 */
+  /* 菜单项的边框控制 */
+}
+.g-action-sheet .g-action-sheet-wrap .g-action-sheet-header {
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  /* 头部标题，用来描述菜单作用 */
+}
+.g-action-sheet .g-action-sheet-wrap .g-action-sheet-header .g-action-sheet-title {
+  flex: 1;
+  padding: 0.3rem;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.g-action-sheet .g-action-sheet-wrap .g-action-sheet-body {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+.g-action-sheet .g-action-sheet-wrap .g-action-sheet-footer {
+  margin-top: 0.2rem;
+  background: #fff;
+}
+.g-action-sheet .g-action-sheet-wrap .g-action-sheet-menu {
+  display: block;
+  padding: 0.3rem;
+  text-align: center;
+}
+.g-action-sheet .g-action-sheet-wrap .g-action-sheet-menu + .g-action-sheet-menu {
+  display: block;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* 菜单弹出的时候显示蒙版 */
+.g-action-sheet.show {
+  /* 菜单弹出的时候，改变容器位移 */
+}
+.g-action-sheet.show .g-mask {
+  opacity: 1;
+  pointer-events: auto;
+}
+.g-action-sheet.show .g-action-sheet-wrap {
+  transform: translateY(0);
+}
+/* 文章菜单组件样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 网格组件样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 文章组件 */
+.g-article {
+  position: relative;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  color: #333;
+  padding: 0.2rem 0.3rem;
+  box-sizing: border-box;
+  font-size: 0.4rem;
+  /* 文章大标题 */
+  /* 文章信息，用来放作者、创作时间等 */
+  /* 文章小标题 */
+  /* 文章段落 */
+  /* 文章图片 */
+  /* 展开按钮 */
+}
+.g-article .g-article-title {
+  margin: 0.2rem 0 0.3rem;
+  font-size: 0.5rem;
+}
+.g-article .g-article-info {
+  color: #aaa;
+  margin: 0.2rem 0 0.3rem;
+}
+.g-article .g-article-subtitle {
+  margin: 0.2rem 0;
+}
+.g-article .g-article-paragraph {
+  margin: 0.2rem 0 0.3rem;
+}
+.g-article .g-article-img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+.g-article .g-article-unfold-btn {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1.5rem;
+  padding-top: 0.2rem;
+  text-align: center;
+  color: #e0652f;
+  font-size: 1rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, #6f6a6a 100%);
+}
+/* 文章被折叠的情况 */
+.g-article.fold {
+  max-height: 100%;
+  overflow: hidden;
+  /* 控制展开按钮的显示 */
+}
+.g-article.fold .g-article-unfold-btn {
+  display: block;
+}
+/* 按钮组件样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 按钮组件样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 按钮组件样式 */
+/* 默认样式 */
+.g-btn {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.2rem 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  font-size: 0.4rem;
+  text-align: center;
+  color: #000000;
+  border-radius: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  user-select: none;
+}
+/* 中按钮 */
+.g-btn-middle {
+  padding: 0.3rem 0;
+}
+/* 大按钮 */
+.g-btn-large {
+  padding: 0.5rem 0;
+}
+/* 主操作按钮 */
+.g-btn-primary {
+  background-color: #1AAD19;
+  color: #fff;
+}
+/* 警示按钮 */
+.g-btn-warning {
+  background-color: #E64340;
+  color: #fff;
+}
+/* 不可用按钮 */
+.g-btn-disabled {
+  background-color: #F7F7F7;
+  color: #999;
+  opacity: 0.6;
+}
+.g-btn-disabled:hover {
+  cursor: not-allowed;
+}
+.g-btn-link {
+  border: 0;
+  color: #204A87;
+}
+/* 表单组件样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 表单样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+.g-form-item {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  font-size: 0.4rem;
+  padding: 0.3rem 0;
+  /* 输入框 */
+  /* 自定义单选 */
+  /* 自定义多选 */
+}
+.g-form-item > .g-form-label {
+  display: block;
+  color: #666;
+  width: 1.5rem;
+}
+.g-form-item > .g-form-body {
+  flex: 1;
+  /* input 重置按钮 */
+  /* input 警示按钮 */
+}
+.g-form-item > .g-form-body > .g-input {
+  width: 100%;
+  border: none;
+  font-size: 0.4rem;
+}
+.g-form-item > .g-form-body > .g-input-reset {
+  position: absolute;
+  right: 0.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  text-align: center;
+  line-height: 0.5rem;
+  background: #aaa;
+  color: #fff;
+  border-radius: 50%;
+}
+.g-form-item > .g-form-body > .g-input-warning {
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  text-align: center;
+  line-height: 0.5rem;
+  border: 1px solid red;
+  color: red;
+  border-radius: 50%;
+  right: 0.5rem;
+  box-sizing: border-box;
+}
+.g-form-item > .g-radio {
+  flex: 1;
+  /* 未选中状态的图标 */
+  /* 选中状态的图标 */
+  /* 隐藏的radio类型的input */
+}
+.g-form-item > .g-radio > .g-radio-icon {
+  margin-right: 0.3rem;
+  color: #09BB07;
+  visibility: hidden;
+}
+.g-form-item > .g-radio .checked {
+  visibility: visible;
+}
+.g-form-item > .g-radio > .g-radio-input {
+  position: absolute;
+  left: -999rem;
+}
+.g-form-item > .g-check {
+  flex: 1;
+  font-size: 0.4rem;
+  /* 未选中时的图标 */
+  /* 选中时的图标 */
+  /* 隐藏的check类型的input */
+}
+.g-form-item > .g-check > .g-check-icon {
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0);
+  font-size: 0.4rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+}
+.g-form-item > .g-check > .checked {
+  background: #09BB07;
+  color: #fff;
+  border-color: rgba(0, 0, 0, 0);
+}
+.g-form-item > .g-check > .g-check-input {
+  position: absolute;
+  left: -999rem;
+}
+/* 去掉最后一行的下边框 */
+.g-form-item:last-child {
+  border-bottom: none;
+}
+/* 网格组件样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 网格组件样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 网格组件 */
+.g-grid {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #ddd;
+  /* 网格中的格子 */
+  /* 去除最后一列的边框 */
+}
+.g-grid .g-grid-item {
+  position: relative;
+  flex: 1 1 33%;
+  box-sizing: border-box;
+  padding: 0.2rem 0;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  /* grid内容区 */
+}
+.g-grid .g-grid-item .g-grid-icon {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+}
+.g-grid .g-grid-item .g-grid-label {
+  color: #333;
+}
+.g-grid .g-grid-item:nth-child(3n) {
+  border-right: none;
+}
+/* 不需要边框时取消容器上的border */
+.g-grid.no-border {
+  border: none;
+}
+.g-grid.no-border .g-grid-item {
+  border: none !important;
+}
+/* 两列网格 */
+.g-grid.g-grid-2 .g-grid-item {
+  border-right: 1px solid #ddd;
+  flex-basis: 50%;
+  padding: 0.2rem 0;
+}
+.g-grid.g-grid-2 .g-grid-item:nth-child(2n) {
+  border-right: none;
+}
+/* 三列网格 */
+.g-grid.g-grid-3 .g-grid-item {
+  border-right: 1px solid #ddd;
+  flex-basis: 33%;
+  padding: 0.2rem 0;
+}
+.g-grid.g-grid-3 .g-grid-item:nth-child(3n) {
+  border-right: none;
+}
+/* 四列网格 */
+.g-grid.g-grid-4 .g-grid-item {
+  border-right: 1px solid #ddd;
+  flex-basis: 25%;
+  padding: 0.2rem 0;
+}
+.g-grid.g-grid-4 .g-grid-item:nth-child(4n) {
+  border-right: none;
+}
+/* 五列网格 */
+.g-grid.g-grid-5 .g-grid-item {
+  border-right: 1px solid #ddd;
+  flex-basis: 20%;
+  padding: 0.2rem 0;
+}
+.g-grid.g-grid-5 .g-grid-item:nth-child(5n) {
+  border-right: none;
+}
+/* 列表组件样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 列表组件样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+.g-list {
+  /* 列表里每一行的容器 */
+}
+.g-list .g-list-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.2rem 0.3rem;
+  font-size: 0.4rem;
+  background: #fff;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  min-height: 0.8rem;
+  /* 列表项的图片容器 */
+  /* 列表项的文字区域 */
+}
+.g-list .g-list-item .item-img-wrap {
+  flex: 0 0 3rem;
+  height: 3rem;
+  margin-right: 0.3rem;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  /* 列表项的图片 */
+}
+.g-list .g-list-item .item-img-wrap .item-img {
+  width: 100%;
+  height: 100%;
+}
+.g-list .g-list-item .item-content-wrap {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  /* 列表项的标题 */
+  /* 列表项的加个字段 */
+  /* 列表项的描述字段 */
+}
+.g-list .g-list-item .item-content-wrap .item-title {
+  font-size: 0.4rem;
+  font-weight: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.g-list .g-list-item .item-content-wrap .item-price {
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.4rem;
+  font-weight: 600;
+  color: #e0652f;
+}
+.g-list .g-list-item .item-content-wrap .item-desc {
+  color: #999;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.4rem;
+  overflow: hidden;
+}
+/* loading组件样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 网格组件样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 页面加载提示组件 */
+.g-loading {
+  padding: 1rem 0;
+  text-align: center;
+  /* 页面加载提示组件的图标 */
+  /* 页面加载提示组件的提示信息 */
+}
+.g-loading .g-loading-icon {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.05);
+}
+.g-loading .g-loading-info {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.5rem;
+  color: #ccc;
+}
+/* 单行加载提示组件 */
+.g-loading-inline {
+  margin: 0.3rem auto 0.2rem;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  color: #999;
+  height: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  /* 单行加载提示组件的文本信息 */
+}
+.g-loading-inline .g-loading-info {
+  display: inline-block;
+  padding: 0 0.3rem;
+  position: relative;
+  top: -0.5rem;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.5rem;
+  background: #fff;
+  /* 单行加载提示组件的图标 */
+}
+.g-loading-inline .g-loading-info .g-loading-icon {
+  color: rgba(0, 0, 0, 0.2);
+}
+/* 菜单组件样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 网格组件样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 菜单项 */
+.g-menu .g-menu-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 0.2rem 0.3rem;
+  height: 0.8rem;
+  /* 菜单名称 */
+  /* 菜单信息 */
+  /* 下级操作引导图标 */
+  /* 切换开关 */
+  /* 选中状态下，改变开关边框和背景色 */
+  /* 使用::after伪元素实现圆形按钮的样式 */
+  /* 选中状态下，更改圆形按钮的位置 */
+}
+.g-menu .g-menu-item .g-menu-name {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #333;
+}
+.g-menu .g-menu-item .g-menu-value {
+  max-width: 5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #999;
+}
+.g-menu .g-menu-item .g-menu-icon {
+  margin-left: 0.3rem;
+  color: #999;
+}
+.g-menu .g-menu-item .g-switch {
+  position: relative;
+  box-sizing: content-box;
+  width: 1.6rem;
+  height: 0.8rem;
+  border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, border 0.3s;
+  /* 去掉webkit内核里默认的样式 */
+  -webkit-appearance: none;
+  /* 去掉webkit内核里默认的点击效果 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.g-menu .g-menu-item .g-switch:checked {
+  border-color: #07C160;
+  background-color: #07C160;
+}
+.g-menu .g-menu-item .g-switch::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 0.7rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 2px #999;
+  transition: left 0.3s;
+}
+.g-menu .g-menu-item .g-switch:checked::after {
+  left: 0.8rem;
+}
+/* 模态框组件样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 网格组件样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 模态框 */
+.g-modal {
+  display: none;
+  /* 模态框窗口容器 */
+  /* 模态框内容区 */
+  /* 控制模态框内容区的内边距 */
+  /* 模态框尾部 */
+}
+.g-modal .g-modal-wrap {
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #fff;
+  border-radius: 0.4rem;
+  font-size: 0.4rem;
+  z-index: 301;
+  /* 纯图片模态框里的关闭按钮 */
+}
+.g-modal .g-modal-wrap .g-modal-close {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 0.6rem;
+  height: 0.6rem;
+  padding: 0.2rem;
+  margin: auto;
+  bottom: -1.5rem;
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: 100;
+  color: #eee;
+  border: 1px solid #eee;
+  border-radius: 50%;
+}
+.g-modal .g-modal-body {
+  padding: 0.2rem 0.3rem;
+  overflow: hidden;
+  /* 图片形式的模态框样式 */
+}
+.g-modal .g-modal-body .g-modal-img {
+  display: block;
+  width: 100%;
+  border-radius: 0.3rem;
+}
+.g-modal .g-modal-body.no-padding {
+  padding: 0;
+}
+.g-modal .g-modal-footer {
+  display: flex;
+  border-top: 1px solid #ddd;
+  /* 模态框尾部里按钮的样式 */
+  /* 模态框尾部中的按钮加上分隔 */
+}
+.g-modal .g-modal-footer .g-btn {
+  border: none;
+  border-radius: 0;
+  width: 100%;
+}
+.g-modal .g-modal-footer .g-btn + .g-btn {
+  border-left: 1px solid #ddd;
+}
+/* 控制模态框的显示 */
+.g-modal.show {
+  display: block;
+}
 /* 面板组件样式 */
 /*
  * 
  * @Author: gaohui 
- * @descripe: 自定义UI组件库/框架
+ * @descripe: 面板样式
  * @Date: 2020-04-08
  * @Last Modified by: gaohui
  * @Last Modified time: 2020-04-08
  * 
  * */
+.g-panel {
+  font-size: 0.4rem;
+}
 .g-panel .g-panel-title {
-  height: 1.8rem;
-  line-height: 1.8rem;
-  padding-left: 1rem;
+  padding: 0.3rem;
   color: #aaa;
   background: #fff;
   border-top: 1px solid #eee;
-  font-size: 14px;
   font-weight: normal;
 }
 .g-panel .g-panel-body {
   position: relative;
-  margin-bottom: 0.6rem;
-  padding: 0.6rem 1rem;
+  padding: 0.3rem;
   background: #fff;
   overflow: hidden;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
-.g-panel .g-no-padding {
-  padding: 0;
+/* 搜索框组件样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 搜索框组件
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* 搜索框 */
+.g-search {
+  background: #f8f8f8;
+  margin: auto;
+  position: relative;
+}
+/* .g-search.on-focus + .g-page-wrap{
+    display: none;
+} */
+/* 搜索栏中的表单 */
+.g-search > .g-search-form {
+  display: flex;
+  align-items: center;
+}
+/* 输入框的容器 */
+.g-search > .g-search-form > .g-search-input-wrap {
+  flex: 1;
+  position: relative;
+  padding: 0 0.2rem;
+  margin: 0.3rem 0;
+}
+/* 搜索图标 */
+.g-search .g-search-icon {
+  position: absolute;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  font-size: 0.5rem;
+  left: 0.5rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  color: #ccc;
+}
+/* 输入框的样式 */
+.g-search .g-search-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 0.5rem;
+  background: #fff;
+  border-radius: 0.1rem;
+}
+/* 清空按钮的样式 */
+.g-search .g-search-clear {
+  position: absolute;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  width: 0.5rem;
+  font-size: 0.5rem;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  right: 0.5rem;
+  border-radius: 50%;
+  color: #fff;
+  background: #ccc;
+  display: none;
+}
+/* 对清空按钮的控制 */
+.g-search.on-focus .g-search-input:valid + .g-search-clear {
+  display: block;
+  text-align: center;
+}
+/* 取消按钮 */
+.g-search > .g-search-form > .g-search-cancel {
+  display: none;
+}
+/* 对取消按钮的控制 */
+.g-search.on-focus > .g-search-form > .g-search-cancel {
+  width: 1rem;
+  padding-right: 0.2rem;
+  text-align: center;
+  font-size: 0.5rem;
+  display: block;
+}
+/* 搜索建议 */
+.g-search > .g-search-suggest {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+.g-search.on-focus > .g-search-suggest {
+  display: block;
+}
+/* 搜索建议的内容 */
+.g-search > .g-search-suggest > .g-suggest-item {
+  padding-left: 0.5rem;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.5rem;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+/* 提示框组件样式 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 网格组件样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+/* Toast提示工具 */
+.g-toast {
+  position: fixed;
+  width: 7rem;
+  top: 45%;
+  transform: translateY(-40%);
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 1rem 0;
+  opacity: 0;
+  color: #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 0.4rem;
+  transition: transform 0.3s, opacity 0.3s;
+  z-index: 301;
+}
+/* 显示Toast组件 */
+.g-toast.show {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+/* Toast组件中的图标 */
+.g-toast > .g-toast-icon {
+  font-size: 2.2rem;
+}
+/* Toast组件中的文本部分 */
+.g-toast > .g-toast-info {
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
 }

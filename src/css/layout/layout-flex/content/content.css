@@ -22,6 +22,9 @@
 /* 背景色定义 */
 /* 透明色彩定义 */
 /* 统一字体 */
+/* 列表高度统一 */
+/* 内边距统一设定 */
+/* 外边距统一设定 */
 /*
  * 
  * @Author: gaohui 
@@ -31,7 +34,7 @@
  * @Last Modified time: 2020-04-08
  * 
  * */
-/* 媒体查询 */
+/* 媒体查询 --- 暂不使用 */
 /* 蒙版样式 */
 /*
  * 
@@ -62,18 +65,98 @@
  * @Last Modified time: 2020-04-08
  * 
  * */
-.g-padding-max {
+.g-padding-large1 {
+  padding: 0 1rem;
+}
+.g-padding-large1-all {
   padding: 1rem;
 }
-.g-padding-middle {
-  padding: 0.8rem;
+.g-padding-large2 {
+  padding: 0 2rem;
 }
-.g-padding-min {
+.g-padding-large2-all {
+  padding: 2rem;
+}
+.g-padding-large3 {
+  padding: 0 3rem;
+}
+.g-padding-large3-all {
+  padding: 3rem;
+}
+.g-padding-large {
+  padding: 0 0.5rem;
+}
+.g-padding-large-all {
   padding: 0.5rem;
+}
+.g-padding-middle {
+  padding: 0 0.3rem;
+}
+.g-padding-middle-all {
+  padding: 0.3rem;
+}
+.g-padding-small {
+  padding: 0 0.2rem;
+}
+.g-padding-small-all {
+  padding: 0.2rem;
+}
+.g-padding-no {
+  padding: 0rem;
+}
+/* 外边距 */
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 内边距设置
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+.g-margin-large1 {
+  margin: 0 1rem;
+}
+.g-margin-large1-all {
+  margin: 1rem;
+}
+.g-margin-large2 {
+  margin: 0 2rem;
+}
+.g-margin-large2-all {
+  margin: 2rem;
+}
+.g-margin-large3 {
+  margin: 0 3rem;
+}
+.g-margin-large3-all {
+  margin: 3rem;
+}
+.g-margin-large {
+  margin: 0 0.5rem;
+}
+.g-margin-large-all {
+  margin: 0.5rem;
+}
+.g-margin-middle {
+  margin: 0 0.3rem;
+}
+.g-margin-middle-all {
+  margin: 0.3rem;
+}
+.g-margin-small {
+  margin: 0 0.2rem;
+}
+.g-margin-small-all {
+  margin: 0.2rem;
+}
+.g-margin-no {
+  margin: 0rem;
 }
 /* 内容区域 */
 .g-flex-content {
   box-sizing: border-box;
   overflow-y: auto;
   flex: 1;
+  padding: 0.2rem 0.3rem;
 }

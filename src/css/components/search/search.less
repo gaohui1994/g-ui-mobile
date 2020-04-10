@@ -1,0 +1,111 @@
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 搜索框组件
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+
+@import '../../theme/theme.less';
+@import '../../common/common.less';
+
+/* 搜索框 */
+.g-search{
+    background: #f8f8f8;
+    margin: auto;
+    position: relative;
+}
+
+/* .g-search.on-focus + .g-page-wrap{
+    display: none;
+} */
+/* 搜索栏中的表单 */
+.g-search > .g-search-form{
+    display: flex;
+    align-items:center;
+}
+/* 输入框的容器 */
+.g-search > .g-search-form > .g-search-input-wrap{
+    flex: 1;
+    position: relative;
+    padding: 0 @padding-small;
+    margin: @padding-middle 0;
+}
+/* 搜索图标 */
+.g-search .g-search-icon{
+    position: absolute;
+    height: @interval-large;
+    line-height: @interval-large;
+    font-size: @default-font-size;
+    left: @interval-large;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #ccc;
+}
+/* 输入框的样式 */
+.g-search .g-search-input{
+    box-sizing: border-box;
+    width: 100%;
+    height: @interval-large;
+    padding: @interval-large 1rem;
+    border: none;
+    font-size: @default-font-size;
+    background: #fff;
+    border-radius: .1rem;
+}
+/* 清空按钮的样式 */
+.g-search .g-search-clear{
+    position: absolute;
+    height: @interval-large;
+    line-height: @interval-large;
+    width: @interval-large;
+    font-size: @default-font-size;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right: @interval-large;
+    border-radius: 50%;
+    color: #fff;
+    background: #ccc;
+    display: none;
+}
+/* 对清空按钮的控制 */
+.g-search.on-focus .g-search-input:valid + .g-search-clear{
+    display: block;
+    text-align: center;
+}
+/* 取消按钮 */
+.g-search > .g-search-form > .g-search-cancel{
+    display: none;
+}
+/* 对取消按钮的控制 */
+.g-search.on-focus > .g-search-form > .g-search-cancel{
+    width:1rem;
+    padding-right: @interval-small;
+    text-align: center;
+    font-size: @default-font-size;
+    display: block;
+}
+
+/* 搜索建议 */
+.g-search > .g-search-suggest{
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+.g-search.on-focus > .g-search-suggest{
+    display: block;
+}
+/* 搜索建议的内容 */
+.g-search > .g-search-suggest > .g-suggest-item{
+    padding-left: @interval-large;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: @default-font-size;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}

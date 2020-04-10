@@ -1,0 +1,86 @@
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 网格组件样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+
+@import '../../theme/theme.less';
+@import '../../common/common.less';
+
+/* 模态框 */
+
+.g-modal {
+    display: none;
+    /* 模态框窗口容器 */
+    .g-modal-wrap {
+        position: absolute;
+        width: 60%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: #fff;
+        border-radius: .4rem;
+        font-size: @small-font-size;
+        z-index: 301;
+        /* 纯图片模态框里的关闭按钮 */
+        .g-modal-close {
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: .6rem;
+            height: .6rem;
+            padding: @interval-small;
+            margin: auto;
+            bottom: -1.5rem;
+            text-align: center;
+            font-size: @large-font-size;
+            font-weight: 100;
+            color: #eee;
+            border: 1px solid #eee;
+            border-radius: 50%;
+        }
+    }
+    /* 模态框内容区 */
+    .g-modal-body {
+        padding: @interval-small @interval-middle;
+        overflow: hidden;
+        /* 图片形式的模态框样式 */
+        .g-modal-img {
+            display: block;
+            width: 100%;
+            border-radius: .3rem;
+        }
+    }
+    /* 控制模态框内容区的内边距 */
+    .g-modal-body.no-padding {
+        padding: 0;
+    }
+    /* 模态框尾部 */
+    .g-modal-footer {
+        display: flex;
+        border-top: 1px solid #ddd;
+        /* 模态框尾部里按钮的样式 */
+        .g-btn {
+            border: none;
+            border-radius: 0;
+            width: 100%;
+        }
+        /* 模态框尾部中的按钮加上分隔 */
+        .g-btn+.g-btn {
+            border-left: 1px solid #ddd;
+        }
+    }
+}
+
+
+/* 控制模态框的显示 */
+
+.g-modal.show {
+    display: block;
+}

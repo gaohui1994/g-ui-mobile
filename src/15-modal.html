@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta hgp-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+
+	<body>
+		<div class="g-header">
+			<div class="left"><i class="fa fa-chevron-left"></i></div>
+			<div class="title">UI-模态框</div>
+			<div class="right"><i class="fa fa-ellipsis-h"></i></div>
+		</div>
+
+		<div class="g-content">
+			<p>内容区</p>
+			<hr />
+			<a class="g-btn g-btn-primary" id="btn1">弹出模态框</a>
+			<hr />
+			<a class="g-btn g-btn-warning" id="btn2">弹出模态框</a>
+
+		</div>
+
+		<div class="g-navbar">
+			<a class="navbar-item">
+				<i class="fa fa-home icon"></i>
+				<span class="name">首页</span>
+			</a>
+			<a class="navbar-item active">
+				<i class="fa fa-list icon"></i>
+				<span class="name">分类</span>
+			</a>
+			<a class="navbar-item">
+				<i class="fa fa-search icon"></i>
+				<span class="name">发现</span>
+			</a>
+			<a class="navbar-item">
+				<i class="fa fa-user-o icon"></i>
+				<span class="name">我的</span>
+			</a>
+		</div>
+
+		<div class="g-modal" id="text-modal">
+			<div class="g-mask"></div>
+			<div class="g-modal-wrap">
+				<div class="g-modal-body">
+					<p>您的会员即将到期，请及时续费，以免影响您的权益。</p>
+				</div>
+				<div class="g-modal-footer">
+					<a class="g-btn">下次再说</a>
+					<a class="g-btn">立即续费</a>
+				</div>
+			</div>
+		</div>
+		<div class="g-modal" id="img-modal">
+			<div class="g-mask"></div>
+			<div class="g-modal-wrap">
+				<div class="g-modal-body no-padding">
+					<img class="g-modal-img" src="./img/modal-test.jpg" alt="">
+				</div>
+				<i class="fa fa-close g-modal-close"></i>
+			</div>
+		</div>
+
+	</body>
+
+</html>
+<script src="index.js"></script>
+<script type="text/javascript">
+	window.onload = () => {
+		// 弹出模态框
+		document.querySelector('#btn1').onclick = (e) => {
+			document.querySelector('#text-modal').classList.add('show');
+		}
+
+		document.querySelector('#btn2').onclick = (e) => {
+			document.querySelector('#img-modal').classList.add('show');
+		}
+
+		// 关闭
+		document.querySelectorAll('.g-modal-footer .g-btn').forEach((ele) => {
+			ele.onclick = (e) => {
+				document.querySelector('#text-modal').classList.remove('show');
+			}
+		})
+		document.querySelector('.g-modal-close').onclick = (e) => {
+			document.querySelector('#img-modal').classList.remove('show');
+		}
+	};
+</script>

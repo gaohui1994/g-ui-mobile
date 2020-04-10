@@ -2,7 +2,7 @@
  * 
  * @Author: gaohui 
  * @descripe: 表单样式
- * @Date: 2020-04-08
+ * @Date: 2020-02-02
  * @Last Modified by: gaohui
  * @Last Modified time: 2020-04-08
  * 
@@ -21,13 +21,14 @@
 /* 背景色定义 */
 /* 透明色彩定义 */
 /* 统一字体 */
+/* 列表高度统一 */
 /* 内边距统一设定 */
 /* 外边距统一设定 */
 /*
  * 
  * @Author: gaohui 
  * @descripe: 公共样式配置
- * @Date: 2020-04-08
+ * @Date: 2020-02-02
  * @Last Modified by: gaohui
  * @Last Modified time: 2020-04-08
  * 
@@ -38,7 +39,7 @@
  * 
  * @Author: gaohui 
  * @descripe: 遮罩层样式, 在多个地方都会用的, 放到公共样式中
- * @Date: 2020-04-08
+ * @Date: 2020-02-02
  * @Last Modified by: gaohui
  * @Last Modified time: 2020-04-08
  * 
@@ -58,33 +59,33 @@
  * 
  * @Author: gaohui 
  * @descripe: 内边距设置
- * @Date: 2020-04-08
+ * @Date: 2020-02-02
  * @Last Modified by: gaohui
  * @Last Modified time: 2020-04-08
  * 
  * */
-.g-padding-max1 {
+.g-padding-large1 {
   padding: 0 1rem;
 }
-.g-padding-max1-all {
+.g-padding-large1-all {
   padding: 1rem;
 }
-.g-padding-max2 {
+.g-padding-large2 {
   padding: 0 2rem;
 }
-.g-padding-max2-all {
+.g-padding-large2-all {
   padding: 2rem;
 }
-.g-padding-max3 {
+.g-padding-large3 {
   padding: 0 3rem;
 }
-.g-padding-max3-all {
+.g-padding-large3-all {
   padding: 3rem;
 }
-.g-padding-max {
+.g-padding-large {
   padding: 0 0.5rem;
 }
-.g-padding-max-all {
+.g-padding-large-all {
   padding: 0.5rem;
 }
 .g-padding-middle {
@@ -93,10 +94,10 @@
 .g-padding-middle-all {
   padding: 0.3rem;
 }
-.g-padding-min {
+.g-padding-small {
   padding: 0 0.2rem;
 }
-.g-padding-min-all {
+.g-padding-small-all {
   padding: 0.2rem;
 }
 .g-padding-no {
@@ -107,33 +108,33 @@
  * 
  * @Author: gaohui 
  * @descripe: 内边距设置
- * @Date: 2020-04-08
+ * @Date: 2020-02-02
  * @Last Modified by: gaohui
  * @Last Modified time: 2020-04-08
  * 
  * */
-.g-margin-max1 {
+.g-margin-large1 {
   margin: 0 1rem;
 }
-.g-margin-max1-all {
+.g-margin-large1-all {
   margin: 1rem;
 }
-.g-margin-max2 {
+.g-margin-large2 {
   margin: 0 2rem;
 }
-.g-margin-max2-all {
+.g-margin-large2-all {
   margin: 2rem;
 }
-.g-margin-max3 {
+.g-margin-large3 {
   margin: 0 3rem;
 }
-.g-margin-max3-all {
+.g-margin-large3-all {
   margin: 3rem;
 }
-.g-margin-max {
+.g-margin-large {
   margin: 0 0.5rem;
 }
-.g-margin-max-all {
+.g-margin-large-all {
   margin: 0.5rem;
 }
 .g-margin-middle {
@@ -142,10 +143,10 @@
 .g-margin-middle-all {
   margin: 0.3rem;
 }
-.g-margin-min {
+.g-margin-small {
   margin: 0 0.2rem;
 }
-.g-margin-min-all {
+.g-margin-small-all {
   margin: 0.2rem;
 }
 .g-margin-no {

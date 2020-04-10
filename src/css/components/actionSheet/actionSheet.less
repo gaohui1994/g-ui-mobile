@@ -1,0 +1,91 @@
+/*
+ * 
+ * @Author: gaohui 
+ * @descripe: 网格组件样式
+ * @Date: 2020-04-08
+ * @Last Modified by: gaohui
+ * @Last Modified time: 2020-04-08
+ * 
+ * */
+
+@import '../../theme/theme.less';
+@import '../../common/common.less';
+/* 弹出菜单的样式文件 */
+
+
+/* 默认隐藏蒙版 */
+
+.g-action-sheet> {
+    .g-mask {
+        opacity: 0;
+        /* 屏蔽元素的点击事件 */
+        pointer-events: none;
+        transition: opacity .3s ease;
+    }
+    /* 弹出菜单容器，默认隐藏在屏幕的下面 */
+    .g-action-sheet-wrap {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: #eee;
+        transition: transform .3s ease;
+        transform: translateY(100%);
+        z-index: 301;
+        /* 弹出菜单头部 */
+        .g-action-sheet-header {
+            padding: @interval-middle;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background: #fff;
+            /* 头部标题，用来描述菜单作用 */
+            .g-action-sheet-title {
+                flex: 1;
+                padding: @interval-middle;
+                font-weight: normal;
+                color: rgba(0, 0, 0, .3);
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+        }
+        /* 中间主要内容区 */
+        .g-action-sheet-body {
+            border-top: 1px solid rgba(0, 0, 0, .1);
+            background: #fff;
+        }
+        /* 菜单尾部，通常用来放取消按钮 */
+        .g-action-sheet-footer {
+            margin-top: @interval-small;
+            background: #fff;
+        }
+        /* 每个菜单项 */
+        .g-action-sheet-menu {
+            display: block;
+            padding: @interval-middle;
+            text-align: center;
+        }
+        /* 菜单项的边框控制 */
+        .g-action-sheet-menu+.g-action-sheet-menu {
+            display: block;
+            border-top: 1px solid rgba(0, 0, 0, .1);
+        }
+    }
+}
+
+
+/* 菜单弹出的时候显示蒙版 */
+
+.g-action-sheet.show {
+    .g-mask {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    /* 菜单弹出的时候，改变容器位移 */
+    .g-action-sheet-wrap {
+        transform: translateY(0);
+    }
+}
