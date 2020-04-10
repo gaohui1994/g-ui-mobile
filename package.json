@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --contentbase src --inline --hot --open",
     "dev": "nodemon --watch webpack.config.js --exec npm run start",
-    "build": "webpack --progress --color"
+    "build": "node webpack-build.js"
   },
   "keywords": [],
   "author": "",
